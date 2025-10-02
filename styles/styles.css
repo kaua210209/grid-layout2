@@ -1,0 +1,87 @@
+.container { 
+    display: grid; 
+    grid-template-areas: "header header"
+    "nav main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    min-width: 1200px;
+    gap: 10px;
+    margin: 0 auto;   
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(99, 43, 255);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(197, 237, 255);
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li a :hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(197, 237, 255);
+    border: solid 1 px #ccc;
+}
+
+.flexsection {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.flexItem {
+    background-color: #f4f4f4;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;    
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(99, 43, 255);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(99, 43, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(154, 120, 255);
+}
